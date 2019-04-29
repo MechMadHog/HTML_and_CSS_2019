@@ -1,0 +1,37 @@
+<!-- Forms -->
+<!--Text Boxes-->
+<input type="text" name="myName" />
+<!--Password input-->
+<input type="password" name=userPass">
+<!--Dropdown Menu-->
+<select name="gender">
+  <option value="NA" disabled="disabled" selected="selected"
+    >Select Gender</option
+  >
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="other">Other</option>
+</select>
+<!--Text Area-->
+<textarea name="biography" cols="60" rows="5">Describe yourself.</textarea>
+<!--Radio Buttons-->
+1 <input type="radio" name="radio" id="rd1" value="rad1" /> 2
+<input type="radio" name="radio" id="rd2" value="rad2" /> 3
+<input type="radio" name="radio" id="rd3" value="rad3" />
+<!--Check Boxes-->
+<input type="checkbox" name="checkbox" id="checkbox1" />
+<input type="checkbox" name="checkbox" id="checkbox2" checked="checked" />
+<input type="checkbox" name="checkbox" id="checkbox3" />
+<!--Buttons-->
+<button type="button">Press Me!</button><br />
+<input type="button" value="Press Me - input" />
+<!--Button types - Examples: button, reset, submit etc.-->
+<!--When inside a form element it will clear all of the data entered.-->
+
+<!--Form Example-->
+<form method="post" action="mypage.html">
+  <!--action is where you are taken on "submit"-->
+  <input type="text" name="name" />
+  <input type="submit" name="Submit" />
+  <input type="reset" name="Reset" /><!--"reset" will clear all data.-->
+</form>
