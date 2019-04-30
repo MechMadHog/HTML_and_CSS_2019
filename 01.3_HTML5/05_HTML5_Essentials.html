@@ -1,0 +1,24 @@
+<!-- Geolocation: -->
+<!-- How to use a browser to find a Users location. -->
+<!-- Example: -->
+
+<p id="coordinates"></p>
+<button onclick="getUsersLocation()">Where Am I?</button>
+<script>
+  var userLoc = document.getElementById("coordinates");
+  function getUsersLocation(params) {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      userLoc.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+  function showPosition(position) {
+    userLoc.innerHTML =
+      "Latitude: " +
+      position.coordinates.latitude +
+      "<br />Longitude: " +
+      position.coordinates.longitude;
+  }
+</script>
+<!-- It is IMPORTANT that a User gives permission as it is an invasion of privacy. -->
