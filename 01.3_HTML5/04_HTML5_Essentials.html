@@ -1,0 +1,43 @@
+<!-- Audio: -->
+<audio controls="controls">
+  <source src="music.ogg" type="audio/ogg" />
+  <source src="music.mpeg" type="audio/mpeg" />
+  <source src="music.wav" type="audio/wav" />
+  <!-- It is ideal to ALWAYS support all three file types. -->
+  Your browser is either too old or does not support ogg, mpeg or wav file
+  types.
+</audio>
+
+<!-- Drag & Drop: -->
+<!-- Event Attribute Examples: draggable, ondragstart, ondragover, and ondrop-->
+<!-- Event Attributes typically get their functionality from JavaScript. -->
+<!-- Example Script: -->
+<head>
+  <script type="text/javascript">
+    function allowDrop(e) {
+      e.preventDefault();
+      // This prevents an object from being put back in it's initial position.
+    }
+    function drag(e) {
+      e.dataTransfer.setData("Text", e.target.id);
+      // This allows the object to be dragged i.e. moved with mouse.
+    }
+    function drop(e) {
+      e.preventDefault();
+      d = e.dataTransfer.getData("Text"); // d = data
+      e.target.appendChild(document.getElementById(d));
+      //This allows the object to be dropped i.e. placed with mouse.
+    }
+  </script>
+</head>
+<body>
+  <img
+    draggable="true"
+    id="piece"
+    src="image.jpg"
+    ondragstart="drag(event)"
+    height="300"
+    width="300"
+  />
+  <div ondrop="drop(event)" ondragover="allowDrop(event)" id="puzzle"></div>
+</body>
