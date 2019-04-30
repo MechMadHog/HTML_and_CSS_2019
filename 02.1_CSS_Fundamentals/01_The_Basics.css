@@ -1,0 +1,32 @@
+/* CSS: Cascading Style Sheet is what is used to add design to a webpage. */
+/* Such as: Layout, Colour(color) and Fonts. */
+/* CSS is loaded in-order from Tom to Bottom.*/
+/* CSS is NOT Case sensitive.*/
+
+/* CSS Syntax Example:
+------------------------------
+ selector {
+  property1: value1;
+  property2: value2;
+}
+Together a Property and it's Value is called a Declaration.*/
+
+/* In CSS white-space does not matter; so CSS files can be minified, But this makes them very difficult for a person to read. */
+
+/* Using CSS in a webpage: */
+/* Inline Styling: */
+/*
+<div style=" CSS Declarations Go Here! " ></div>
+*/
+/* Internal Styling: */
+/*
+<head>
+<style> CSS Goes In Here! </style>
+</head>
+*/
+/* External Styling: */
+/*
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+*/
