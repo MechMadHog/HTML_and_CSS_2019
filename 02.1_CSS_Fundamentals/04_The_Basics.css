@@ -1,0 +1,37 @@
+/* Background Repeat: */
+body {
+  background-repeat: inherit;
+  /* This will take on the properties of the parent element. */
+  background-repeat: no-repeat;
+  /* This will ONLY display the image once. */
+  background-repeat: repeat;
+  /* This will repeat the image until  the background is FULL. */
+  background-repeat: repeat-x;
+  /* This will ONLY repeat on the horizontal axis. */
+  background-repeat: repeat-y;
+  /* This will ONLY repeat on the vertical axis. */
+}
+
+/* Background Attachment: */
+body {
+  background-attachment: inherit;
+  /* This will take on the properties of the parent element. */
+  background-attachment: scroll;
+  /* This will allow the background image to move dynamically with the rest of the webpage. */
+  background-attachment: fixed;
+  /* A Fixed background image will not move it is in a static position. */
+}
+
+/* Background Position: */
+body {
+  background-position: inherit;
+  background-position: center;
+  background-position: top;
+  background-position: right;
+  background-position: bottom;
+  background-position: left;
+  /* The Background Position: can accept TWO values, One for from x axis and One from the y axis.*/
+  background-position: 100px 300px;
+  /* The example above will position the background 100px to the right on the x-axis and 300px from the top on the y-axis.*/
+  /* This is also known as the x-position and the y-position.*/
+}

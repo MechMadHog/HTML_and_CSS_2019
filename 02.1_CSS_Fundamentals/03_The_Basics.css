@@ -1,0 +1,33 @@
+/* Styling HTML Elements */
+/* All  HTML Elements are predetermined selector so it is not necessary for it to follow a symbol. */
+
+/* In CSS both Single-line and Multi-line Comments appear inside of "/*"and "*/
+
+/* Background Colour: */
+.Example {
+  background-color: black;
+  /* For more specific colours it is necessary to us Hex Codes or RGBA. */
+}
+
+/* Background Images: */
+.Example {
+  background-image: url("image.png");
+  /* This can also be linked to an image on the internet by using an image address. */
+  /* URL stands for Uniform Resource Locator. */
+  height: 100%;
+  width: 100%;
+  /* The Height and Width of an Image will resize the image and may affect how it is displayed. */
+}
+
+/* Background Image Properties: */
+.noImage {
+  background-image: none;
+}
+.inheritImage {
+  background-image: inherit;
+  /* The background image will be inherited from it's parent. */
+}
+.startImage {
+  background-image: url("image.png");
+}
+/* Transparent backgrounds will allow what is behind to be partially visible; this can be achieved using RGBA. */
