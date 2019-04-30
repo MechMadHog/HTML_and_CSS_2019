@@ -1,0 +1,31 @@
+<!-- Spellcheck & Content-editable: -->
+<!-- spellcheck="true|false" -->
+<!-- Example: -->
+<p spellcheck="true">splel chekc thsi scentanse.</p>
+<!-- It allows "Right-click" formatting to allow changes to live spelling mistakes.  -->
+<!-- This will only work inside of text boxes / text areas. the element MUST be an editable space. -->
+
+<!-- contenteditable -->
+<!-- Example: -->
+<p contenteditable="true" spellcheck="true">splel chekc thsi scentanse.</p>
+<!-- This will allow the element to be an editable space. -->
+<!-- This changes will not be cached by the page, and will not be changed in the database.
+The changes are only subjective to the User. -->
+
+<!-- Videos: -->
+<!-- Example: -->
+<video>
+  <!-- With HTML5 it is no longer necessary to use Flash / plugins to support playing a video. -->
+  <!--The Browser Preference Order:-->
+  <!--1-->
+  <source src="video.mp4" type="video/mp4" />
+  <!--2-->
+  <source src="video.ogg" type="video/ogg" />
+  <!--3-->
+  <source src="video.webm" type="video/webm" />
+  <!-- Each video format is there as contingency for the previous not running in a particular browser, and if all three fail to load; the message below will be displayed. -->
+  Your browser does not support this video type.
+</video>
+<!-- Video Attributes: -->
+<!-- autoplay="autoplay", controls="controls", loop="loop",  -->
+<!-- controls consists of: Play / Pause and Volume Control. -->
