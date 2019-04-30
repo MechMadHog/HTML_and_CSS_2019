@@ -1,0 +1,31 @@
+<!-- Local Storage & Session Storage: -->
+<!-- localStorage allows a webpage to store a users data.  -->
+<!-- sessionStorage allows a webpage to store a users data temporarily.  -->
+<!-- The User MUST be using a HTML5 Browser and have JavaScript turned on. -->
+<!-- Example Script: -->
+<script>
+  if (typeof Storage !== "undefined") {
+    // This site can accept localStorage
+    alert("Accepted");
+  } else {
+    // This site is unable to accept localStorage
+    alert("No localStorage accepted");
+  }
+</script>
+<!-- Local Storage: will be available until a browser's cache is cleared.-->
+<!-- Session Storage: will ONLY be available while  a browser's window is open. -->
+<!-- Example Script: To store User data using localStorage.-->
+<script>
+  localStorage.myName = "Michael MacDonagh";
+  //Stored in Local Storage.
+  sessionStorage.myName = "Michael MacDonagh";
+  //Stored in Session Storage.
+</script>
+<!-- Example Script: To access User data using localStorage. -->
+<script>
+  alert(localStorage.myName);
+</script>
+<!-- This will Output any names stored in localStorage using the myName variable. -->
+
+<!-- In the past Cookies were used, but Cookies can only hold a small amount of data. -->
+<!-- Unlike Cookies; localStorage can only be accessed from the website that it was Stored. -->
