@@ -1,0 +1,33 @@
+<!-- Custom Video Controls Example: -->
+<!-- IMPORTANT: HTML5 is largely JavaScript dependent -->
+<button onclick="playORpause()">Play / Pause.</button>
+<button onclick="bigSCREEN()">Large Screen size</button>
+<button onclick="normalSCREEN()">Regular Screen size</button>
+<!-- The onclick="" attribute allows buttons to take on functionality by writing JavaScript functions. -->
+<br />
+<video id="videoTitle" width="500">
+  <source src="video.mp4" type="video/mp4" />
+  <source src="video.ogg" type="video/ogg" />
+  <source src="video.webm" type="video/webm" />
+  Your browser is either too old or does not support MP4, ogg or webm file
+  types.
+</video>
+<script>
+  var videoTitle = document.getElementById("videoTitle");
+
+  function playORpause() {
+    if (videoTitle.paused) {
+      videoTitle.play();
+    } else {
+      videoTitle.pause();
+    }
+  }
+
+  function normalSCREEN() {
+    videoTitle.width = 500;
+  }
+
+  function bigSCREEN() {
+    videoTitle.width = 800;
+  }
+</script>
