@@ -1,0 +1,30 @@
+/* CSS: What do I put inside an external style sheet? */
+/* Default Style Sheets: style.css or main.css, But It actually doesn't matter what it is called. */
+
+/* Inverted Style Example: */
+body {
+  background-color: black;
+  color: white;
+}
+
+/* ID's and Classes: */
+#SampleID {
+  color: red;
+}
+/* ID's MUST be identified with a "#" */
+/* ID's are unique/specific and ONLY one should ever exist on my style sheet. */
+/*
+ID Example:
+<div id="SampleID">Sample Text</div>
+The color of the Sample Text inside this div will now be displayed red.
+*/
+.SampleClass {
+  color: blue;
+}
+/* Classes MUST be identified with a "." */
+/* Classes can be re-used to target multiple Elements. */
+/*
+Class Example:
+<div class="SampleClass">Sample Text</div>
+The color of the Sample Text inside this div will now be displayed blue.
+*/
