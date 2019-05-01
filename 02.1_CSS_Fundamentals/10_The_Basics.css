@@ -1,0 +1,38 @@
+/* Width & Height: */
+/* Pixel measurement will always be a fixed constant,
+but using percentages will remain relative to screen size. */
+/* Width: */
+.auto {
+  width: auto;
+}
+/* This will take up the full width of the element. */
+/* auto is DEFAULT. */
+.half {
+  width: 50%;
+}
+/* This will take up half of the screen; regardless of the device. */
+.pixel {
+  width: 200px;
+}
+/* This will take up exactly 200px of the screen size; regardless of the device. */
+/* Height: */
+.auto {
+  height: auto;
+}
+/* Height has the EXACT same properties as width except it uses the height property */
+
+/* Borders: */
+/* These include: border-width, border-style and border-color. */
+/* Full Border */
+div {
+  border-width: medium;
+  /* This will have a medium border. */
+  border-width: thin;
+  /* This will have a thin border. */
+  border-width: thick;
+  /* This will have a thick border. */
+  border-width: 5px 5px 5px 5px;
+  /* This will have border length of 5 pixels, if it was ONLY given a single value. */
+  /* Elements are styled in a clock-wise fashion i.e. TRouBLe (Top, Right, Bottom, Left). */
+  /* If not stated a value will MIRROR it's opposite value. */
+}

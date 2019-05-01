@@ -1,0 +1,43 @@
+/* Border Style */
+div {
+  border-style: solid;
+  /* This is a solid black border. */
+  border-style: double;
+  /* This will have double the length of a solid border */
+  border-style: dotted;
+  /* This is a dotted-line border. */
+  border-style: dashed;
+  /* This is a dashed/perforated-edge border. */
+  border-style: ridge;
+  border-style: groove;
+  /* This is a 3D ridged & inverted ridged styled border; this MUST have a border-color to be defined. */
+  border-style: inset;
+  border-style: outset;
+  /* This is a 3D in-set & out-set styled border; this MUST have a border-color to be defined. */
+  border-style: none;
+  /* This will display NO border. */
+}
+/* 3D Borders Require; A border-color and a much larger border-width to be displayed correctly. */
+
+/* Border Colour */
+div {
+  border-color: black;
+  /* It can use the NAME of the colour. */
+  border-color: #000;
+  /* It can use the HEX Code of the colour. */
+  border-color: rgba(255, 255, 255, 0);
+  /* Or it can use the RGBA of the colour. */
+}
+
+/* Individual Side Styling - Example: */
+.Top {
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: black;
+}
+/* This can ALSO be applied to Right, Bottom and Left.
+Or: It can also be written in short-hand. */
+div {
+  border: 5px solid black;
+  border-top: 5px solid black;
+}
