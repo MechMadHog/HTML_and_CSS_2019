@@ -1,0 +1,25 @@
+/* Margin & Padding: */
+/* Margin: */
+/* The Margin is the space OUTSIDE of a HTML element. */
+div.margin {
+  margin: 50px 50px 50px 50px;
+  /* The margin property can target ALL or individually short-hand. */
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  /* Or individually; if I ONLY wanted to target a SPECIFIC side. */
+}
+/* Padding: */
+/* Padding is the space INSIDE of a HTML element. */
+div.padding {
+  padding: 50px;
+  /* The padding property can target ALL or individually short-hand. */
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  /* Or individually; if I ONLY wanted to target a SPECIFIC side. */
+}
+/* INSTEAD of using a zero-measurement;
+I can just use the value of "0" as zero has an absolute value. */
