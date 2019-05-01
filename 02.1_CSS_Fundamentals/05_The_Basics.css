@@ -1,0 +1,50 @@
+/* Text Formatting:  */
+/* Text Color: */
+h1 {
+  color: inherit;
+  /* This will take on the properties of the parent element. */
+  color: black;
+  /* It can use the NAME of the colour. */
+  color: #000;
+  /* It can use the HEX Code of the colour, primary colours may only need #000 rather than stating #000000 (the complete HEX value). */
+  color: rgba(255, 255, 255, 0);
+  /* Or it can use the RGBA of the colour. */
+}
+/* RGBA stands for Red Green Blue Alpha; The Alpha channel refers to the amount of Opacity(transparency) */
+
+/* font-style */
+h1 {
+  font-style: inherit;
+  /* This will take on the properties of the parent element. */
+  font-style: italic;
+  font-style: oblique;
+  /* Oblique is the TRUE form of Italic; It is rarely used, if ever. */
+  font-style: none;
+  /* This will clear any other font-style. */
+}
+
+/* font-weight */
+h1 {
+  font-weight: inherit;
+  /* This will take on the properties of the parent element. */
+  font-weight: bold;
+  /* This will make the text BOLD. */
+  font-weight: normal;
+  /* This will clear any other font-weight. */
+}
+
+/* font-decoration */
+h1 {
+  text-decoration: inherit;
+  /* This will take on the properties of the parent element. */
+  text-decoration: blink;
+  /* This will flash a piece of text; this isn't supported in most browsers anymore. */
+  text-decoration: line-through;
+  /* This will cross through a piece of text. */
+  text-decoration: overline;
+  /* This will put a line over a piece of text. */
+  text-decoration: underline;
+  /* This will underline a piece of text. */
+  text-decoration: none;
+  /* This will clear any other text-decoration. */
+}
