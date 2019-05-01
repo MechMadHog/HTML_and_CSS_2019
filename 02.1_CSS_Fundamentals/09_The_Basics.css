@@ -1,0 +1,46 @@
+/* Styling Lists: This is commonly used for Navigation. */
+/* List Style Type: <ul> */
+li {
+  list-style-type: disc;
+  /* This is the DEFAULT bullet point  */
+  list-style-type: circle;
+  /* This is a hollow circular bullet point  */
+  list-style-type: square;
+  /* This is solid square bullet point  */
+  list-style-type: none;
+  /* This means there is no list formatting.  */
+}
+/* List Style Type: <ol> */
+li {
+  list-style-type: decimal;
+  /* This is the DEFAULT: 1., 2., 3., 4., 5., etc. */
+  list-style-type: upper-roman;
+  /* Listed with Upper-case roman numeral: I, II, III, IV, V, etc.  */
+  list-style-type: lower-roman;
+  /* Listed with lower-case roman numeral: i, ii, iii, iv, v, etc.  */
+  list-style-type: upper-alpha;
+  /* Listed with alphabetically in Upper-case: A, B, C, D, E, etc.  */
+  list-style-type: none;
+  /* This means there is no list formatting.  */
+}
+/* The list order will ALWAYS be counted regardless if certain list-items display no list formatting. */
+
+/* Side By Side: */
+li {
+  display: block;
+  /* This is DEFAULT.  */
+  display: inline;
+  /* Block display MUST be over written to display elements side by side. */
+  /* This will automatically remove all list-type-style's from the element. */
+}
+/* Custom List Images/Icons: */
+li {
+  background-image: url("icon.png");
+  background-repeat: no-repeat;
+  list-style-type: none;
+  padding-left: 8px;
+  /* This will add the icon image as the list-style-type; 
+   while moving the text 8 pixels to the right, UNCOVERING the Width of the icon,
+   allowing for it to be displayed.
+   The amount of distance can be chosen as necessary. */
+}
