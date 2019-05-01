@@ -1,0 +1,34 @@
+/* Positions: */
+/* Used to place elements in SPECIFIC positions on a webpage.*/
+/* Position Absolute: */
+div {
+  position: absolute;
+  /* This will place an element exactly where it is positioned on a webpage;
+  For example to cover the entire area of the screen.*/
+  top: 0px;
+  left: 0px;
+  /*Absolute-position measurements can be applied to TRouBLe. */
+  /* This will disregard ANY margin or padding from getting applied to this element.
+  As the element will be in it's own separate LAYER. */
+}
+/* Position Relative: */
+div {
+  position: relative;
+  /* This can be used to place elements side by side as it allows for OVER-LAP depending on the max-width. */
+  display: inline-block;
+}
+/* Position Static: */
+div {
+  position: static;
+  /* This is the DEFAULT position of an element. */
+}
+/* Position Fixed: */
+div {
+  position: fixed;
+  /* This is used when a background DOES NOT scroll with the page. */
+  top: 0px;
+  left: 0px;
+  /*Absolute-position measurements can be applied to TRouBLe. */
+  /* This will disregard ANY margin or padding from getting applied to this element.
+  As the element will be in it's own separate LAYER. */
+}
