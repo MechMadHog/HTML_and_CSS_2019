@@ -1,0 +1,25 @@
+/* Location & Layers: */
+/* Z-Index: */
+/* If an element has a HIGHER z-index than another element; it will be on a TOP layer. */
+/* This can be achieved with: */
+div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  /* z-index value can be either auto (This will inherit from a parent element.) or a value. */
+}
+/* This will be on a separate LAYER from the other elements on a webpage;
+By DEFAULT the z-index of a webpage is "0". */
+
+/* Relative: */
+/* How does the position:relative; property affect the position:absolute; property? */
+/* position:absolute; elements can be positioned INSIDE (on top in CSS)
+of a position:relative; element. */
+
+/* Floating: */
+div {
+  float: left; /* It will be positioned as far LEFT as it can be; Other elements will float to the RIGHTof it. */
+  float: right; /* It will be positioned as far RIGHT as it can be; Other elements will float to the LEFT of it. */
+  /* This can accept values: left, right, inherit and none. */
+}
