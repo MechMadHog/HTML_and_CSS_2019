@@ -1,0 +1,44 @@
+/* Text Properties: */
+/* These include: text-align, text-decoration, text-overflow., text-transform. */
+/* Tex Align: */
+h1 {
+  text-align: inherit;
+  /* This will take on the properties of the parent element. */
+  text-align: justify;
+  /* This will stretch-out lines of text  so that the paragraph is of equal widths; like a newspaper. */
+  text-align: center;
+  /* x-axis alignment will either:  left, center, and right align a piece of text. */
+}
+
+/* Tex Indent: */
+h1 {
+  text-indent: inherit;
+  /* This will take on the properties of the parent element. */
+  text-indent: 300px;
+  /* This will indent the text, like padding; length can be measured in px/cm/em. */
+  text-indent: 50%;
+  /* This will indent the text to a percentage of the parent element. */
+}
+
+/* Tex Overflow: This is a CSS3 Property.*/
+h1 {
+  text-overflow: clip;
+  /* This will stop text from breaking through it's parent element; This looks very ABRUPT. */
+  /* The text will STILL be Scrollable. */
+  text-overflow: ellipsis;
+  /* This will stop text from breaking through it's parent element; This will add a "..." to the end point, This will look BETTER than using a clip. */
+}
+
+/* Tex Transform: */
+h1 {
+  text-transform: inherit;
+  /* This will take on the properties of the parent element. */
+  text-transform: capitalize;
+  /* This Will Make The First Letter Of Each Word Capitalized. */
+  text-transform: lowercase;
+  /* this will make all characters lower-case. */
+  text-transform: uppercase;
+  /* THIS WILL MAKE ALL CHARACTERS UPPER-CASE. */
+  text-transform: none;
+  /* This will clear any other text-transform on this element. */
+}

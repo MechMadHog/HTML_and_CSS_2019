@@ -1,0 +1,26 @@
+/* Font Properties: */
+/* These include: font-size, font-family, font-style and font-weight. */
+/* Font Size: */
+h1 {
+  font-size: inherit;
+  /* This will take on the properties of the parent element. */
+  /*REM (Root EM) is ONLY relative to the html font-size. */
+  font-size: 12px;
+  /* px measurement is the size of a font-space in exact pixels, in this case 12 pixels. */
+  /* cm measurement is the size of a font-space in exact centimeters*/
+  /*EM (is used for print media) is the exact size of the fonts CAP-space; it is ALWAYS relative to the font-size of it's parent element. */
+  font-size: xx-small;
+  /*It can also support worded answers like above; these include:
+    xx-small, x-small, smaller, small, medium, large, larger, x-large and xx-large.
+    This is not supported by every browser.*/
+}
+
+/* Font Family: */
+h1 {
+  font-family: inherit;
+  /* This will take on the properties of the parent element. */
+  font-family: Arial, Helvetica, sans-serif;
+  /* A comma separated list, The browser will try each font in the list until ONE is displayed. */
+  /* If a font-family's name consist of white-space the font-family MUST be wrapped in quotes.
+  Example: "Lucida Sans Unicode". */
+}
