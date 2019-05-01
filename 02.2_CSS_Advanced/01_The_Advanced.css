@@ -1,0 +1,52 @@
+/* CSS: Advanced */
+/* Grouping & Nesting: */
+/* Grouping: */
+#id,
+.class,
+div {
+  color: black;
+}
+/* ID's, Classes and or elements that share the same declarations;
+can be grouped TOGETHER by separating them using a "," as seen above. */
+
+/* Nesting: */
+/* This REQUIRES working knowledge of the DOM;
+and can be used to target SPECIFIC elements. 
+Nesting DOES NOT use ",". */
+div button {
+  background-color: black;
+  color: white;
+}
+/* This will target EVERY button that is located INSIDE of a div. */
+/* This will ONLY ever target the MOST CHILD (or grandchild etc.) element that is located INSIDE of the PARENT element */
+
+/* Min & Max - Height & Width: */
+/* Min & Max Width: */
+/* Sometimes I will run into an element that doesn't want to cooperate with regular styling properties. */
+div.width {
+  min-width: inherit;
+  /* Takes the display property of it's parent element.  */
+  min-width: 800px;
+  /* length can be measured in px, cm, em, etc. */
+  /*This means that the page will not get any SMALLER than 800px. */
+  min-width: 40%;
+  /* and */
+  max-width: inherit;
+  /* Takes the display property of it's parent element.  */
+  max-width: none;
+  /* This means there is NO max width. */
+  max-width: 1920px;
+  /* length can be measured in px, cm, em, etc. */
+  /*This means that the page will not get any BIGGER than 1920px. */
+  max-width: 100%;
+  /* When It is necessary to set a max width it is ALSO
+  usually necessary to set overflow to hidden.  */
+}
+/* Min & Max Height: */
+/* Height has the EXACT same properties as width except it uses the height property. */
+
+/* The ONLY thing that will affect the Min and Max Height or Width; is Margin, Padding and Border.
+The measurements of these will have to be SUBTRACTED from the value
+in order to find the content's ACTUAL Min and Max Height or Width  */
+
+/* It is best practice to use EXACT Measurements. */
