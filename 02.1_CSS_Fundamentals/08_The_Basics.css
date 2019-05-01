@@ -1,0 +1,29 @@
+/* Styling Links: */
+/* The LoVe/HAte Rule is the order that pseudo CSS should be styled: :link, :visited, :hover, :active. */
+/* Pseudos are the action states of an element.  */
+/* The order of grouped css properties is IMPORTANT, the lower properties will ALWAYS inherit default properties from the Above Declaration. */
+a:link {
+  color: darkblue;
+}
+/* This would be the default state of a link. */
+a:visited {
+  color: blueviolet;
+}
+/* This is what it would look like after it has been clicked. */
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* This is what it would look like when the cursor hovers over it. */
+a:active {
+  color: indigo;
+}
+/* This is what it would look like during the cursor is clicking the link. */
+/* When a specificLink has an id or a class it would look as follows: */
+a.specificLink:link {
+  color: darkblue;
+}
+/* or */
+a#specificLink:link {
+  color: darkblue;
+}
