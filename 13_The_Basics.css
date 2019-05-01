@@ -1,0 +1,31 @@
+/* Cursor Styling: */
+/* Cursor values include:
+default, auto, inherit, URL, pointer, text, progress, help, crosshair, wait, move,
+n-resize, s-resize, e-resize, w-resize, nw-resize, se-resize and sw-resize. */
+/* URL: */
+body {
+  cursor: url("cursor_image.png"), default;
+  /* The browser will either load cursor_image.png as the cursor on the webpage;
+or it will display the default cursor if unable to load the image. */
+}
+/* Every Other Cursor Type: */
+body {
+  cursor: default;
+  /*The Default value can be replaced with any of the other values.*/
+}
+
+/* Display: */
+div {
+  display: none;
+  /* To HIDE any element on a webpage we style it with display:none;. */
+}
+
+/* Block Elements: */
+div.block {
+  display: block;
+  /* Any elements with the class="block" will take up ALL of the space (the entire line) to the Left and Right of it. */
+}
+div.inline {
+  display: inline-block;
+  /* Any elements with the class="inline" will be displayed side by side. */
+}

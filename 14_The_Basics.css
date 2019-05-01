@@ -1,0 +1,37 @@
+/* Other Block Elements: */
+div {
+  display: inherit;
+  /* Takes the display property of it's parent element.  */
+  display: list-item;
+  /* This will behave like a BLOCK element but with a bullet point in front of it"<li>".*/
+  display: table;
+  /* The element will display as a table element. */
+  display: table-caption;
+  /* The element will display as a table caption. */
+  display: table-cell;
+  /* The element will display as a table cell "<td>". */
+  display: table-column;
+  /* The element will display as a table column. */
+  display: table-row;
+  /* The element will display as a table row. */
+  display: inline-table;
+  /* The element will display as an inline table element;
+   It is used to display multiple tables side by side. */
+}
+
+/* Overflow: */
+/* Overflow values include: visible, hidden, auto, scroll and inherit. */
+div {
+  overflow: inherit;
+  /* Takes the display property of it's parent element.  */
+  overflow: visible;
+  /* Any "leaking content will be visible OUTSIDE of the element; This happens by DEFAULT".*/
+  overflow: hidden;
+  /* This will HIDE any content that does not fit in the allocated area. */
+  overflow: auto;
+  /* This will automatically add a scroll bar to view any HIDDEN content. */
+  /* Auto will acknowledge if a horizontal scroll is necessary or not. */
+  overflow: scroll;
+  /* This will ADD a scroll bar to view any HIDDEN content.. */
+  /* Scroll will ADD a horizontal scroll by DEFAULT. */
+}
