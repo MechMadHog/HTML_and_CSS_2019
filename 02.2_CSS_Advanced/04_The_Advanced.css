@@ -1,0 +1,39 @@
+/* The Clear Property: */
+/* Clear is ONLY applied to Floating elements: Clear can accept the values: left, right, inherit and none. */
+div {
+  clear: inherit; /* This will inherit it's value from it's parent element. */
+  clear: none; /* This allows floating elements on BOTH; this is DEFAULT. */
+  clear: both; /* This does NOT allow floating elements to EITHER side. */
+  clear: left; /* This does NOT allow floating elements to the LEFT. */
+  clear: right; /* This does NOT allow floating elements to the RIGHT. */
+} /* This is commonly used to separate text from images. */
+
+/* Pseudo Elements: Continued */
+/* First Child: */
+div:first-child {
+  background: black;
+  color: white;
+} /* This FIRST child of EACH div will appear inverted; This is commonly used for differentiation, like a title or introduction. */
+div > span:first-child {
+  background: black;
+  color: white;
+} /* This this will allow me to target the FIRST child element INSIDE of the FIRST child; that are INSIDE of  a <span> element. */
+div:first-child span {
+  background: black;
+  color: white;
+} /* The selectors must be NESTED in order to target the FIRST child element INSIDE of the FIRST child. */
+
+/* First Letter: */
+div:first-letter {
+  font-size: 32px;
+} /* This will ONLY target the FIRST Letter of the First Child; This is commonly used for magazine articles. */
+/* With :first-letter ONLY some properties can be applied:
+ALL font properties, color, ALL background properties, margin, padding, ALL border properties,
+text-decoration, text-transform, line-height, float and clear. */
+
+/* First Line: */
+div:first-line {
+  font-size: 18px;
+} /* This will ONLY target the FIRST Line of the First Child. */
+/* With :first-line ONLY some properties can be applied:
+ALL font properties, color, ALL background properties, word-spacing, letter-spacing, line-height and clear. */

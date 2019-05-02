@@ -1,0 +1,25 @@
+/* Pseudo Elements: Continued */
+/* Before: */
+/* This can be applied to: <input /> and <textarea>, etc. */
+strong:before {
+  content: "NOTICE: ";
+} /* This will display "NOTICE: " directly before ANY content INSIDE of a strong element that appears on a webpage. */
+
+/* After: */
+blockquote:after {
+  content: ' - "<a href="https://mechmadhog.com">Michael MacDonagh</a>"';
+} /* This is EXACTLY the same as :before except that it will ONLY appear at the end of the content. */
+
+/* Focus: */
+/* This can be applied to: <input /> and <textarea>, etc. */
+div:focus {
+  font-weight: bold;
+} /* This will ONLY be applied when the User CLICKS on the element:
+It is commonly used to IDENTIFY what element the User is currently inside of. */
+
+/* Lang: */
+/* This can be applied to add EMPHASIS to words in a certain LANGUAGE. */
+div:lang(en) {
+  /* This is NOT limited to ACTUAL languages; spaces can NOT be used, words MUST be separated by "-" example: lang(Cafs-Habeep-Language) */
+  text-decoration: underline;
+} /* This will ONLY be applied when the User CLICKS on the element */
