@@ -1,0 +1,36 @@
+/* Alignment: */
+/* This is used to align content INSIDE of an element. */
+/* Center: */
+.center {
+  margin: 0 auto; /* This is the same as margin: 0 auto 0 auto;*/
+} /* TRouBLe will ALWAYS mirror it's parallel side if no value is given. */
+/* Most of the time it may be easier just to use the <center> element. */
+
+/* Custom Alignment: */
+div {
+  margin: auto 0 auto 85%;
+} /* This will ONLY place all content 85% of the screen to the right. */
+/* Most of the time it may be easier: just to set ALL divs to float:right;
+or Use position:absolute or position:relative; declarations to set the left & top properties. */
+/* This is just an example: It isn't very likely that this would be done,
+It's just to SHOW that it could be done */
+
+/* Text Alignment: */
+div {
+  text-align: center;
+} /* This has the values: left, right, center, justify and inherit. */
+
+/* Vertical Alignment: */
+/* This is used when I want to vertically align an element on the y-axis. */
+table tr {
+  vertical-align: baseline; /* This is the DEFAULT alignment. */
+  vertical-align: middle; /* This is wil align an element to the CENTER of it's parent element. */
+  vertical-align: super; /* This is the SAME as <sup>. */
+  vertical-align: top; /* Top will align an element with the HIGHEST point on a line. */
+  vertical-align: text-top;
+  /* Text Top will align an element with the HIGHEST point on it's parent element. */
+  vertical-align: sub; /* This is the SAME as <sub>. */
+  vertical-align: bottom; /* Bottom will align an element with the LOWEST point on a line. */
+  vertical-align: text-bottom;
+  /* Text Bottom will align an element with the LOWEST point of it's parent element. */
+} /* This has the values: baseline, middle, super, top, text-top, sub, bottom, text-bottom and inherit. */

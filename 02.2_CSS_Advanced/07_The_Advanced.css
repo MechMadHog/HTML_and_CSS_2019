@@ -1,0 +1,24 @@
+/* Sprites: */
+/* Sprites allow for images to be loaded faster by ONLY having to load a SINGLE image; to load MOSt if not All icons.
+With a sprite all images will be loaded EQUALLY. */
+/* In order for an image to have a TRANSPARENT background it MUST be a ".png". */
+.sprite-icon {
+  background-image: url("sprite.png"); /* The images with all of my sprites. */
+  background-position: -17px -373px; /* The position of my selected icon:
+  from the Top & Left of "sprite.png". */
+  /* The Browser's background-position begins from the CENTER of the GRAPH below.  */
+  background-repeat: no-repeat; /* To ONLY display the selected icon ONCE */
+  height: 16px; /* INDIVIDUAL icon's height. */
+  width: 16px; /* INDIVIDUAL icon's width. */
+}
+
+/* Sprite Background Position Guide: */
+/* background-position uses the values of "X" and "Y" to display an icon. */
+/* Try to imagine if a GRAPH was to be placed on top of the selected image. */
+/*
+Top Left == -X & +Y.
+Top Right == +X & +Y.
+Bottom Left == -X & -Y.
+Bottom Right == +X & -Y.
+*/
+/* TIP: Half of the Height & Width of the "sprite.png" is the max-range of "-" or "+* of an icon position. */
