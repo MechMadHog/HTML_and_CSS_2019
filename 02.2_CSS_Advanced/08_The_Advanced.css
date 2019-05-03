@@ -1,0 +1,36 @@
+/* Opacity: */
+/* Opacity is the ability to change the transparency of an element. */
+div {
+  /* It is Best Practice to ALWAYS use BOTH properties. */
+  opacity: 0.8; /* This will make opacity 80% in most browsers. */
+  filter: alpha(opacity=80);
+  /* This will make opacity 80% in Internet Explorer. */
+}
+/* NOTE: ALL Child elements wil ALWAYS have the opacity that is set for it's PARENT ELEMENT.
+This CANNOT be changed; ALTHOUGH It is possible to override this by using an image that has
+a transparent background. Example: background-image:url(transparent-background.png); */
+
+/* Media Types / Media Queries: */
+/* Media queries are how a page is  styled based on the device it is being displayed on. */
+/* Example: */
+@media screen {
+  /* This is commonly used for desktops / medium - large monitored devices. */
+}
+@media handheld {
+  /* This is commonly used for mobile devices / small monitored devices. */
+}
+/* INSTEAD of doing this some sites may use a sub domain such as: https://m.site-name.com. */
+@media print {
+  /* This is commonly used for printable content; this should usually be
+FAIRLY BLAND to save the User from wasting ink. */
+}
+@media tv {
+  /* This is commonly used for smart tv's / display as primary function devices. */
+}
+/* Other Examples include:
+all - This can be used to apply to all.
+embossed - This is used for Braille printers.
+braille - This is used for Braille devices.
+projection - This is used for projected slide-shows.
+tty - This is used for tele-prompt & tele-typewriters.
+ */

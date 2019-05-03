@@ -1,0 +1,34 @@
+/* Attribute Selectors: */
+/* By SPECIFYING a particular attribute with a value; I can select and style specific elements. */
+[lang="EN"] {
+  font-weight: bold;
+}
+/* <div lang="EN">Sample Text.</div> */
+/* As long as the element's attribute MATCHES; the element will be styled.
+This is useful when using MULTIPLE in this case; languages.
+This can target any Attribute by itself or with a specific value. */
+
+/* This can be used to style a drop-down menu. */
+option[name="light"] {
+  background-color: lightgray;
+  color: darkgrey;
+}
+option[name="dark"] {
+  background-color: darkgrey;
+  color: lightgray;
+}
+/* This can invert the design on each alternate option.
+<select>
+  <option name="light">Option Number 01</option>
+  <option name="dark">Option Number 02</option>
+  <option name="light">Option Number 03</option>
+  <option name="dark">Option Number 04</option>
+</select> */
+/* This is most commonly used in designing forms. Example: */
+input[type="text"] {
+  color: black;
+}
+input[type="button"] {
+  background-color: black;
+  color: white;
+}

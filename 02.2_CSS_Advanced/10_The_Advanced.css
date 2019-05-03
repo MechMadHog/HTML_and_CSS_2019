@@ -1,0 +1,27 @@
+/* Browser Prefixes: */
+/* Different browsers accept different prefixes:
+Syntax == "-prefix-property:value;",
+-o- is for Opera.
+-webkit- is for Chrome & Safari.
+-ms- is for Microsoft Edge & Internet Explorer.
+and -moz- is for Mozilla Fire Fox. */
+body {
+  -webkit-font-weight: bold;
+  -moz-font-weight: bold;
+  -o-font-weight: bold;
+  -ms-font-weight: bold;
+  /* PREFIX's should ALWAYS be placed before a property.
+  In CSS what IS supported should ALWAYS be at the bottom. */
+  font-weight: normal;
+  /* If a browser does NOT support a feature it will use it's prefix's display value. */
+}
+/* Browser prefixes are necessary for when I might be using a property that might not work in a particular browser.  This is likely for NEWER CSS properties.*/
+
+/* !important */
+
+/* Syntax: selector { property:value!important;} */
+
+/* The !important statement is used to override a value for a specific element such as: an ID.
+It is extremely bad practice to use an !important statement when it is not necessary as this
+can prevent other CSS from being re-styled in the future. */
+/* IMPORTANT NOTE: The !important statement closest to the bottom of a page will take presidency over previous !important statements. */
