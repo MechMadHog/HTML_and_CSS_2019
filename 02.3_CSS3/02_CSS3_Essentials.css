@@ -1,0 +1,23 @@
+/* Box Shadow: */
+/* The following is an example of:
+A white 50*50px box with a 2px solid black border.
+With a box-shadow that is:
+5px horizontal width, 5px vertical height, 10px blur,
+7px spread, of indigo colour, that is outset.
+*/
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px 7px indigo outset;
+}
+/* This can accept the values:
+horizontal-shadow - This is the shadow position on the x-axis.
+vertical-shadow - This is the shadow position on the y-axis.
+blur - This will un-focus the visible shadow.
+spread - This is the shadow RADIUS.
+color - This is how to SELECT the colour of shadow, the DEFAULT is black.
+inset / outset - This is whether the shadow appears on the INSIDE or OUTSIDE.
+outset is the DEFAULT.
+*/
