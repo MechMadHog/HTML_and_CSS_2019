@@ -1,0 +1,39 @@
+/* Background Size: */
+/* This can accept the values:
+width px by height px - This uses two side-by-side values, Example: 10px 10px;.
+width % by height % - This uses two side-by-side values, Example: 150% 150%;.
+ONLY 100% of this will be displayed, this is commonly used for Parallax Backgrounds.
+IMPORTANT Note: The size / resolution of an image will affect how it is displayed.
+contain - This will SCALE (zoom) an image to fit INSIDE an ENTIRE element.
+cover - This will SPREAD (stretch) an image to fit INSIDE an ENTIRE element.
+*/
+.background {
+  background-image: url("background.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 120px;
+}
+/* Since "background.png" has been given a 100*100px background-size; it will be given
+an extra 20*20px of white-space on the Right and Bottom of the .background element. */
+/* Contain: */
+.background {
+  background-image: url("background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 120px;
+}
+/* When using contain it is best to use an element with the SAME height and width as:
+The image that will be displayed will ONLY cover the space that it is ABLE to occupy. */
+/*When using contain an image can be repeated to create a PATTERN. */
+/* Cover: */
+.background {
+  background-image: url("background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 120px;
+}
+/* When using cover an image will be EXPAND until it occupies an ENTIRE element.
+Although it will NOT adjust it's SHAPE to fit INSIDE the element*/
