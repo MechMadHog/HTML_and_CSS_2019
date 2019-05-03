@@ -1,0 +1,45 @@
+/* CSS3 - What is CSS3? */
+/* CSS3 is made up of modules; Modules allow EACH browser to INTERPRET different declarations. */
+/* Some CSS3 modules may be UNSTABLE:
+In this case they may not RUN or in less likely cases may even cause the browser to CRASH. */
+
+/* Rounded Borders: */
+/* In regular CSS it was necessary to use INDIVIDUAL images;
+That would have to be carefully positioned in order to create rounded corners. */
+/* border-image can accept the values of:
+url - This works the same as adding a background-image.
+slice-value - This is a "%" or "px"(Using the value ONLY and not "px" Example: border-.) to SLICE the image using TRouBLe.
+repeat - This will TILE any SLICE-values that will fit in the allocated space i.e. 1.5 of a SLICE will be valid.
+ round - This will ONLY TILE completed SLICE-values.
+ stretch - This will stretch a TILE to fit the entire  allocated space.
+ */
+/* Slicing an image: */
+.border {
+  /* Provided that "rounded-border.png" is 45*45px.
+  This will add the images border as a border-image. */
+  border-image: url("rounded-border.png") 15 15 15 15 round;
+  /* If ROUND is NOT supported by a browser the value will DEFAULT to REPEAT. */
+  border-width: 15px;
+}
+/* This is NOT supported in Internet Explorer. */
+/* In CSS3 this can be accomplished with the border-radius property. */
+.TOP-left {
+  border-top-left-radius: 10px;
+}
+.top-RIGHT {
+  border-top-right-radius: 10px;
+}
+.BOTTOM-right {
+  border-bottom-right-radius: 10px;
+}
+.bottom-LEFT {
+  border-bottom-left-radius: 10px;
+}
+/* This is the SAME as: */
+.radius {
+  border-radius: 10px;
+  /* or  by using TRouBLe: i.e. TOP-left, top-RIGHT, BOTTOM-right and bottom-LEFT. */
+  border-radius: 10px 10px 10px 10px;
+  /* or  by using TRouBLe when PARALLEL sides are the SAME: */
+  border-radius: 10px 10px;
+}
