@@ -1,0 +1,33 @@
+/* Text Shadow: */
+/* text-shadow is very SIMILAR to box-shadow. */
+/* text-shadow is NOT supported by Internet Explorer. */
+/* The following is an example of:
+A 18px Black text with 9px horizontal width,
+9px vertical height, 2px blur and with an indigo colour.
+*/
+.shadow {
+  font-size: 18px;
+  color: black;
+  text-shadow: 9px 9px 12px indigo;
+}
+/* This can accept the values:
+horizontal-shadow - This is the shadow position on the x-axis.
+vertical-shadow - This is the shadow position on the y-axis.
+blur - This is OPTIONAL and will un-focus the visible shadow.
+color - This is OPTIONAL and how to SELECT the colour of shadow, the DEFAULT is black.
+*/
+
+/* Custom Fonts: @Font-Face */
+/* Using custom fonts is available with CSS3 before this ONLY standard fonts were available. */
+@font-face {
+  font-family: myCustomFont; /* This is where I name my font. */
+  src: url("myFont.ttf"), url("myFont.otf"), url("myFont.eot");
+  /* Font type accepted values:
+  ".ttf" & ".otf" are supported by Chrome, Safari, Fire Fox and Opera. */
+  /* Internet Explorer ONLY supports ".eot". */
+}
+.font {
+  font-family: myCustomFont, Arial, Helvetica, sans-serif;
+  /* This MUST match the @font-face font-family in order to use a custom font. */
+  /* If the browser cannot load my font it will try the next font on the list. */
+}
