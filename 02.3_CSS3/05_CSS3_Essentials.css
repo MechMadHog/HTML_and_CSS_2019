@@ -1,0 +1,29 @@
+/* Rotate: */
+/* The transform property allows me to rotate an element without having to use an image to do so:
+"degrees" are used to rotate clockwise and "- degrees" are used to rotate anti-clockwise. */
+.rotate {
+  /* Prefixes are necessary as different browsers perform rotation differently. */
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+/* This will ALSO rotate all children of this element. */
+
+/* Resizing Text Areas: */
+/* Resize is not ALWAYS supported in Opera or Internet Explorer. */
+.horizontal {
+  resize: horizontal; /* This allows expansion along the x-axis. */
+  overflow: auto;
+}
+.vertical {
+  resize: vertical; /* This allows expansion along the y-axis. */
+  overflow: auto;
+}
+.both {
+  resize: both; /* This allows expansion along both the x-axis & the y-axis. */
+  overflow: auto;
+}
+/* resize also accepts the value of: "none" which disables the ability to resize.
+This value is set by DEFAULT. */
