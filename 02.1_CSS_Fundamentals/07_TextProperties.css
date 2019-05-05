@@ -1,6 +1,6 @@
 /* Text Properties: */
 /* These include: text-align, text-decoration, text-overflow., text-transform. */
-/* Tex Align: */
+/* Text Align: */
 h1 {
   text-align: inherit;
   /* This will take on the properties of the parent element. */
@@ -10,7 +10,7 @@ h1 {
   /* x-axis alignment will either:  left, center, and right align a piece of text. */
 }
 
-/* Tex Indent: */
+/* Text Indent: */
 h1 {
   text-indent: inherit;
   /* This will take on the properties of the parent element. */
@@ -20,7 +20,7 @@ h1 {
   /* This will indent the text to a percentage of the parent element. */
 }
 
-/* Tex Overflow: This is a CSS3 Property.*/
+/* Text Overflow: This is a CSS3 Property.*/
 h1 {
   text-overflow: clip;
   /* This will stop text from breaking through it's parent element; This looks very ABRUPT. */
@@ -29,7 +29,7 @@ h1 {
   /* This will stop text from breaking through it's parent element; This will add a "..." to the end point, This will look BETTER than using a clip. */
 }
 
-/* Tex Transform: */
+/* Text Transform: */
 h1 {
   text-transform: inherit;
   /* This will take on the properties of the parent element. */
